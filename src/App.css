@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  background:
+        /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    /* bottom, image */ url("./calm_bg.jpg");
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.App-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  font-size: 10px;
+  margin: 0px 10px 0px 10px;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-volume-slider {
+  width: 100px;
+}
+
+.App-mute-button {
+  display: flex;
+  height: 50%;
+  width: auto;
+}
+
+.App-header-icon {
+  height: 100%;
+  width: auto;
+}
+
+h1 {
+  color: white;
+  font-size: 65px;
+  letter-spacing: 35px;
+  margin: 50px 0px 25px 0px;
+}
+
+h2 {
+  letter-spacing: 3px;
+}
+
+h3 {
+  letter-spacing: 2px;
+  font-size: 17px;
+  color: white;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.App-sounds {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  margin-top: 50px;
+}
+
+.App-sound-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.App-sound-icon {
+  font-size: 75px;
+}
