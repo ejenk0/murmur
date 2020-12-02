@@ -45,15 +45,8 @@ window.onload = function () {
   document.getElementById("volume").oninput = function handleGlobalVolume() {
     global_volume = this.value;
     for (i = 1; i < sound_sliders.length; i++) {
-      console.log(
-        "Setting sum volume of " +
-          sound_sliders[i].previousSibling.textContent +
-          " to " +
-          String((global_volume / 100) * (sound_sliders[i].value / 100))
-      );
       audio_players[sound_sliders[i].previousSibling.textContent].volume =
         (global_volume / 100) * (sound_sliders[i].value / 100);
-      console.log(audio_players[sound_sliders[i].previousSibling.textContent]);
     }
   };
   var i;
