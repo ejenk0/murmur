@@ -3,8 +3,15 @@ import React from "react";
 import volumeicon from "./volume-toggle.png";
 import waves from "./audio/waves.wav";
 import fire from "./audio/fire.wav";
+import rain from "./audio/rain.wav";
+import birds from "./audio/birds.wav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBurn, faWater } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBurn,
+  faFeather,
+  faTint,
+  faWater,
+} from "@fortawesome/free-solid-svg-icons";
 
 class SoundSlot extends React.Component {
   render() {
@@ -25,7 +32,12 @@ class SoundSlot extends React.Component {
 }
 
 var global_volume = 50;
-const audio_players = { Fire: new Audio(fire), Waves: new Audio(waves) };
+const audio_players = {
+  Fire: new Audio(fire),
+  Waves: new Audio(waves),
+  Rain: new Audio(rain),
+  Birds: new Audio(birds),
+};
 for (var key in audio_players) {
   var value = audio_players[key];
   value.autoplay = 1;
@@ -55,6 +67,15 @@ window.onload = function () {
   }
 };
 
+function handleMasterMute() {
+  if (global_volume === "0") {
+    document.getElementById("volume").value = 50;
+  } else {
+    document.getElementById("volume").value = 0;
+  }
+  document.getElementById("volume").oninput();
+}
+
 function App() {
   return (
     <div className="App">
@@ -71,16 +92,22 @@ function App() {
           defaultValue="50"
           className="App-volume-slider"
         />
-        <button className="App-mute-button">
+        <button
+          className="App-mute-button"
+          id="master-mute"
+          onClick={handleMasterMute}
+        >
           <img src={volumeicon} className="App-header-icon" alt="volume_icon" />
         </button>
       </header>
       <div className="App-body">
         <h1>MURMUR</h1>
         <h2>Wash away distractions with ambient sound</h2>
-        <div className="App-sounds">
+        <div className="App-sounds-drawer">
           <SoundSlot icon={faBurn} text="Fire" />
           <SoundSlot icon={faWater} text="Waves" />
+          <SoundSlot icon={faTint} text="Rain" />
+          <SoundSlot icon={faFeather} text="Birds" />
         </div>
       </div>
     </div>
