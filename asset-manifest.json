@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/murmur/static/css/main.bce16c13.chunk.css",
+    "main.js": "/murmur/static/js/main.57514d2d.chunk.js",
+    "main.js.map": "/murmur/static/js/main.57514d2d.chunk.js.map",
+    "runtime-main.js": "/murmur/static/js/runtime-main.1c1e6c82.js",
+    "runtime-main.js.map": "/murmur/static/js/runtime-main.1c1e6c82.js.map",
+    "static/js/2.b0599cc6.chunk.js": "/murmur/static/js/2.b0599cc6.chunk.js",
+    "static/js/2.b0599cc6.chunk.js.map": "/murmur/static/js/2.b0599cc6.chunk.js.map",
+    "static/js/3.7f3c9f79.chunk.js": "/murmur/static/js/3.7f3c9f79.chunk.js",
+    "static/js/3.7f3c9f79.chunk.js.map": "/murmur/static/js/3.7f3c9f79.chunk.js.map",
+    "index.html": "/murmur/index.html",
+    "static/css/main.bce16c13.chunk.css.map": "/murmur/static/css/main.bce16c13.chunk.css.map",
+    "static/js/2.b0599cc6.chunk.js.LICENSE.txt": "/murmur/static/js/2.b0599cc6.chunk.js.LICENSE.txt",
+    "static/media/birds.0293d4f7.wav": "/murmur/static/media/birds.0293d4f7.wav",
+    "static/media/App.css": "/murmur/static/media/calm_bg.a1b4d82d.jpg",
+    "static/media/fire.3a1d2c72.wav": "/murmur/static/media/fire.3a1d2c72.wav",
+    "static/media/rain.1b24ee4c.wav": "/murmur/static/media/rain.1b24ee4c.wav",
+    "static/media/waves.368141e4.wav": "/murmur/static/media/waves.368141e4.wav"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c1e6c82.js",
+    "static/js/2.b0599cc6.chunk.js",
+    "static/css/main.bce16c13.chunk.css",
+    "static/js/main.57514d2d.chunk.js"
+  ]
+}
